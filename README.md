@@ -11,6 +11,3 @@ A base de dados foi construída a partir do MySQL, utilizando o PhpMyAdmin, e o 
 
 ## Executando o projeto
 Após ativar o WampServer e o ambiente virtual que a aplicação está rodando, voltar na pasta Projeto_BD e escrever no prompt de comando: streamlit run crud.py. Após, espere a aplicação abrir instantâneamente em http://localhost:8501/.
-
-## Problemas Técnicos
-No momento o código do trabalho se encontra na branch master, então caso tenha o interesse de utilizá-lo, se direcionar para lá.
