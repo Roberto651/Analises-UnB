@@ -7,10 +7,10 @@ Tecnologias usadas: Python, Streamlit, MySQL, WampServer
 O projeto é um aplicativo web que busca desenvolver um banco de dados para fazer avaliação de disciplinas e professores. O trabalho visa fornecer uma ferramenta de manipulação de dados, que atenda aos seguintes requisitos: 3 CRUDs de entidades diferentes, uma camada de persistência e uso de views e procedures.
 
 ## WampServer
-A base de dados foi construída a partir do MySQL, utilizando o PhpMyAdmin, e o servidor WampServer para colocar a aplicação no ar. Para baixar, siga as instruções em https://www.wampserver.com/en/ .
+A base de dados foi construída a partir do MySQL, utilizando o PhpMyAdmin, e o servidor WampServer para colocar a aplicação no ar. Para baixar, siga as instruções em https://www.wampserver.com/en/ . Baixando o WampServer, também está sendo baixado o MySQL e o PhpMyAdmin.
 
 ## Executando o projeto
-É necessário criar uma pasta para o trabalho, execute no prompt de comando o comando: python -m venv venv
+É necessário criar uma pasta para o trabalho, e dentro dela, executar no prompt de comando o comando: python -m venv venv
 
 Após, execute os comandos:
 cd venv/Scripts
@@ -32,6 +32,15 @@ Com ele ativado, pode ir em qualquer navegador e acessar a URL: localhost/phpmya
 
 Nele, crie um banco de dados chamado dados_app, e crie as tabelas relacionadas no arquivo CreateTable.sql, que está no GitHub.
 
+Para fazer a conexão do código com o MySQL, colocar os dados do banco de dados no arquivo crud.py , que está nas linhas 11 a 16 do mesmo.
+
+No caso do criador do código, foram os seguintes dados:
+
+host="localhost",
+user="root",
+password="",
+database="dados_app"
+
 Para rodar, esteja dentro do ambiente virtual e na pasta do trabalho. Após, deve executar o comando: streamlit run crud.py
 
-Acredito que com isso já dê pra executar a aplicação.
+Com isso, a aplicação poderá ser executada.
